@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dinamica_ws *.css
+recursive-include dinamica_ws *.csv
+recursive-include dinamica_ws *.html
+recursive-include dinamica_ws *.ico
+recursive-include dinamica_ws *.js
+recursive-include dinamica_ws *.json
+recursive-include dinamica_ws *.md
+recursive-include dinamica_ws *.png
+recursive-include dinamica_ws *.py
+recursive-include dinamica_ws *.svg
+recursive-include dinamica_ws *.txt
+recursive-exclude dinamica_ws *.pyc
