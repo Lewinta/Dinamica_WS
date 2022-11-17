@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+	<title>Cooperativa Dinamica</title>
+
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="shortcut icon">
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Google Fonts - Poppins -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Scrollbar Custom CSS -->
+	<link href="vendor/custom-scrollbar/css/custom-scrollbar.min.css" rel="stylesheet">
+
+	<!-- Dropdown CSS -->
+	<link href="vendor/nice-select/css/nice-select.css" rel="stylesheet">
+
+	<!-- Filepond CSS -->
+	<link href="vendor/filepond/filepond.css" rel="stylesheet">
+
+	<!-- Custom Font Icons -->
+	<link href="vendor/icomoon/css/iconfont.min.css" rel="stylesheet">
+
+	<!-- Main Style -->
+	<link href="css/style.green.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="preloader"></div>
+
+	<!-- Sidebar -->
+	<nav id="sidebar">
+		<div id="dismiss">
+			<i class="icon icon-cross"></i>
+		</div>
+
+		<div class="sidebar-header">
+			<small>COOPERATIVA</small>
+			<h3>DINÁMICA</h3>
+		</div>
+
+			<ul class="list-unstyled components">
+
+			<li>
+				<a  href="/login">Login</a>
+			</li>
+		</ul>
+
+		<ul class="list-unstyled">
+
+			<li>
+				<a class="copyright" href="#" target="_blank">&copy; TZCODE SRL</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Page Content -->
+	<div id="content">
+
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container">
+
+				<div class="navTrigger" id="sidebarCollapse">
+					<i></i><i></i><i></i>
+				</div>
+
+				<div class="logo">
+					<img src="img/logo/dinamica_logo.png" alt="Cooperativa Dinamica">
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="nav navbar-nav ml-auto">
+						<!-- <li class="nav-item">
+							<a class="animated-link" href="#" target="_blank">TZCODE</a>
+						</li> -->
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Contact Form Start -->
+		<section id="contact">
+
+			<!-- Container Start -->
+			<div class="container">
+				<div class="row contact-info">
+					<div class="col-lg-12">
+						<br>
+						<h3 class="text-center">COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA</h3>
+						<h3 class="text-center">(COOPDINAMICA)</h3>
+						<h4 class="text-center">Formulario de Suscripción de Socio</h4>
+					</div>
+				</div>
+				<!-- Contact Info Start -->
+				<!-- <div class="row contact-info">
+
+					<div class="col-lg-3">
+						<div class="contact-address">
+							<i class="icon icon-map-marker"></i>
+							<h3>Address</h3>
+							<p>
+								<a href="https://www.google.com/maps?ll=40.710128,-74.006227&z=14&t=m&hl=en-US&gl=BG&mapclient=embed&cid=13302823950184191043" target="_blank">See on Map</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="contact-web">
+							<i class="icon icon-home2"></i>
+							<h3>Web</h3>
+							<p>
+								<a href="https://ultimatewebsolutions.net/sendy/light-blue/">yourweb.com</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="contact-phone">
+							<i class="icon icon-phone-call2"></i>
+							<h3>Phone</h3>
+							<p>
+								<a href="tel:+123456789">+1 1234 5678 9</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="contact-email">
+							<i class="icon icon-envelope"></i>
+							<h3>Email</h3>
+							<p>
+								<a href="mailto:info@example.com">info@yourmail.com</a>
+							</p>
+						</div>
+					</div>
+
+				</div> -->
+				<!-- Contact Info End -->
+
+				<!-- Personal Data Start -->
+				<div class="row" id="personalData">
+					<div class="col-lg-12">
+						<!-- Form Container Start -->
+						<div id="formContainer">
+							<!-- Form Start -->
+							<form method="POST" name="contact-form" action="php/send.php" enctype="multipart/form-data" data-parsley-validate>
+								<div class="row">
+									<div class="col-lg-12">
+										<h3 class="text-center section-header"> Datos Generales del Socio</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>1) Nombre (s):</label>
+											<input class="form-control" name="nombre" placeholder="Ingrese su primer nombre" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>2) Apellido (s):</label>
+											<input class="form-control" name="apellido" placeholder="Ingrese su primer Apellido" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+											<!-- <input type="hidden" id="subject" name="subject" value="Subject Topic 1" /> -->
+											<!-- Should match with the text of the 1st option below -->
+											<!-- <select id="subjectList" class="wide" name="subjectList">
+												<option value="1">Subject Topic 1</option>
+												<option value="2">Subject Topic 2</option>
+												<option value="3">Subject Topic 3</option>
+												<option value="4">Subject Topic 4</option>
+											</select> -->
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>3) Cédula:</label>
+											<input class="form-control" name="cedula" placeholder="xxx-xxxxxxx-x" type="text" data-parsley-pattern="[0-9]{3}-[0-9]{7}-[0-9]{1}" required />
+											<!-- <input class="form-control" name="email" placeholder="Enter VALID EMAIL and check the result" type="email" data-parsley-type="email" required /> -->
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>4) Fecha de Nacimiento:</label>
+											<input class="form-control" name="fecha_nacimiento"  type="date" data-parsley-type="date" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>5) Nivel de Estudio:</label>
+											<input type="hidden" id="subject" name="subject" value="Ninguno" />
+											<!-- Should match with the text of the 1st option below -->
+											<select id="subjectList" class="wide" name="subjectList">
+												<option value="1">Ninguno</option>
+												<option value="2">Básico</option>
+												<option value="3">Medio</option>
+												<option value="4">Universitario</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>6) Estado Civil:</label>
+											<input type="hidden" id="subject" name="subject" value="Soltero" />
+											<!-- Should match with the text of the 1st option below -->
+											<select id="subjectList" class="wide" name="subjectList">
+												<option value="1">Soltero</option>
+												<option value="2">Casado</option>
+												<option value="3">Union Libre</option>
+											</select>
+										</div>
+									</div>
+								</div>
+<!-- 								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Message</label>
+											<textarea class="form-control" id="inputMessage" name="message" placeholder="Enter Your Message" data-parsley-pattern="^[A-Za-z0-9\s.:,!?']+$"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Attachment</label><span class="attachment-info">Only jpg, png, pdf, max. 1Mb.</span>
+											<input type="file" name="filepond[]" />
+										</div>
+									</div>
+								</div> -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>7) Nombre Completo Pareja:</label>
+											<input class="form-control" name="cedula_pareja"  type="text"  required />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>8) Cédula Pareja:</label>
+											<input class="form-control" name="cedula_pareja" placeholder="xxx-xxxxxxx-x" type="text" data-parsley-pattern="[0-9]{3}-[0-9]{7}-[0-9]{1}" />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>9) No. de Dependientes:</label>
+											<input class="form-control" name="dependientes"  type="text" data-parsley-pattern="digit" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>10) Dirección (Calle, casa, sector, ciudad, provincia):</label>
+											<textarea class="form-control" id="inputMessage" name="direccion" placeholder="Direccion" data-parsley-pattern="^[A-Za-z0-9\s.:,!?']+$"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>11) Próximo a:</label>
+											<input class="form-control" name="dependientes"  type="text"  required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>12) Tipo de Vivienda:</label>
+											<input type="hidden" id="tipo_de_vivienda" name="tipo_de_vivienda" value="Propia" />
+											<!-- Should match with the text of the 1st option below -->
+											<select id="tipo_de_vivienda_lst" class="wide" name="tipo_de_vivienda_lst">
+												<option value="1">Propia</option>
+												<option value="2">Alquilada</option>
+												<option value="3">Familiar</option>
+												<option value="4">Otro</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>13) Tiempo Viviendo en esta dirección:</label>
+											<input class="form-control" name="dependientes"  type="number" data-parsley-pattern="digit"  required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>Espeficique</label>
+											<input class="form-control" name="otro_vivienda"  type="text"  required />
+											
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<div class="form-group">
+											<label>14) Teléfono:</label>
+											<input class="form-control" name="telefono" placeholder="Ingrese su telefono residencial" type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<div class="form-group">
+											<label>15) Celular:</label>
+											<input class="form-control" name="celular" placeholder="Ingrese su celular" type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<div class="form-group">
+											<label>16) Otro:</label>
+											<input class="form-control" name="otro_telefono"  type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+											<div class="form-group">
+												<label>17) Correo Electrónico:</label>
+												<input class="form-control" name="email"  type="email" data-parsley-type="email" required />
+											</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<h3 class="text-center section-header"> Datos Laborales</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>18) Ocupaci&oacuten:</label>
+											<input class="form-control" name="ocupacion" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>19) Compañ&iacutea:</label>
+											<input class="form-control" name="compania" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>20) Departamento:</label>
+											<input class="form-control" name="departamento" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>21) Superior Inmediato:</label>
+											<input class="form-control" name="superior_inmediato" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<div class="form-group">
+											<label>22) Principal Autoridad:</label>
+											<input class="form-control" name="principal_autoridad" type="text" data-parsley-pattern="^[A-Za-z\s]+$" required />
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<div class="form-group">
+											<label>23) Salario:</label>
+											<input class="form-control" name="salario" type="text" data-parsley-pattern="digit" required />
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<div class="form-group">
+											<label>24) Fecha de ingreso:</label>
+											<input class="form-control" name="fecha_ingreso" type="date" data-parsley-pattern="date" required />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>25) Di&iacuteas de pago:</label>
+											<input class="form-control" name="dias_de_pago" type="text" data-parsley-pattern="digit" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>26) Forma de Recibir Pagos:</label>
+											<input type="hidden" id="forma_pago" name="forma_pago" value="Efectivo" />
+											<!-- Should match with the text of the 1st option below -->
+											<select id="forma_pago_lst" class="wide" name="forma_pago_lst">
+												<option value="1">Efectivo</option>
+												<option value="2">Deposito</option>
+												<option value="3">Cheque</option>
+												<option value="4">Otro</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>27) Forma de pago:</label>
+											<input type="hidden" id="forma_pago" name="forma_pago" value="Mensual" />
+											<!-- Should match with the text of the 1st option below -->
+											<select id="forma_pago_lst" class="wide" name="forma_pago_lst">
+												<option value="1">Mensual</option>
+												<option value="2">Quincenal</option>
+												<option value="3">Semanal</option>
+												<option value="4">Otro</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>Especifique:</label>
+											<input class="form-control" name="otro_forma_pago" type="text" required />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>Especifique:</label>
+											<input class="form-control" name="otro_metodo_pago" type="text" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<!-- <label>Especifique:</label>
+											<input class="form-control" name="dias_de_pago" type="text" required /> -->
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>28) Dirección (Calle, número, sector, ciudad, provincia):</label>
+											<textarea class="form-control" id="inputMessage" name="direccion_empresa" data-parsley-pattern="^[A-Za-z0-9\s.:,!?']+$"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>29) Tel&eacutefono:</label>
+											<input class="form-control" name="telefono_empresa" type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>30) Extensi&oacuten:</label>
+											<input class="form-control" name="extension_empresa" type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>31) Celular (Flota):</label>
+											<input class="form-control" name="flota_empresa" type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label>32) Otro:</label>
+											<input class="form-control" name="otro_empresa" type="text" data-parsley-type="digits" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+											<div class="form-group">
+												<label>33) Correo Electrónico:</label>
+												<input class="form-control" name="email_empresa"  type="email" data-parsley-type="email" required />
+											</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<h3 class="text-center section-header"> Referencias </h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<!-- Editable table -->
+								    <div id="table" class="table-editable">
+								      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+								            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+								      <table class="table table-bordered table-responsive-md table-striped text-center">
+								        <thead>
+								          <tr>
+								            <th class="text-center">Nombre Completo</th>
+								            <th class="text-center">Relaci&oacuten</th>
+								            <th class="text-center">Tel&eacutefono</th>
+								            <th class="text-center">Remove</th>
+								          </tr>
+								        </thead>
+								        <tbody>
+								          <tr>
+								            <td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
+								            <td class="pt-3-half" contenteditable="true">Padre</td>
+								            <td class="pt-3-half" contenteditable="true">809-979-5810</td>
+								            <td>
+								              <span class="table-remove"><button type="button"
+								                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+								            </td>
+								          </tr>
+								          <!-- This is our clonable table line -->
+								        </tbody>
+								      </table>
+								    </div>
+								  
+								<!-- Editable table -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<h3 class="text-center section-header"> Declaración Jurada y Autorización </h3>
+									</div>
+								</div>
+								<div class="row "style="padding-bottom: 50px">
+									<div class="col-md-12">
+										<p>
+											Yo _______________________________________________, mismo que ha completado el presente formulario, autorizo a la COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA (COOPDINAMICA), a sus autoridades y a mi empleador: A) A consultar toda esta información por los medio que prefieran, librándolos de cualquier responsabilidad o implicaciones estipuladas por la ley, en especial por la ley 288-05. B) Deducir de mis sueldos y/o salarios, todos los meses RD$ ________________________, para usarse en la forma siguiente: 1) RD$ _____________________ para ahorros mensuales; 2) RD$ ________________________ aporte al capital de la COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA (COOPDINAMICA); 3) RD$_________________ para bonos; y cualquier otro monto asumido con la indicada cooperativa. C) Autorizo a la COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA (COOPDINAMICA) a suministrarme cualquier información relacionada a mi relación con dicha institución, sean recibos, estados, cartas de saldos y otros por cualquier vía electrónica, en los medios indicados en este formulario.
+										
+											Por el presente documento declaro bajo la fe del juramento que: 1) Toda la información contenida en este formulario es verídica, y propia de mi persona. 2) Los fondos que utilizaré en mis transacciones con la COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA (COOPDINAMICA), provienen de actividades licitas. 3) Soy el beneficiario final de todas mis operaciones económicas. 4) Actuó por cuenta propia sin presentar lo intereses de ninguna otra persona. 5) Mi propósito con los ahorros y distintos trámites con la COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA (COOPDINAMICA) es para _________________________________ _______________________________________________________ 6) Acepto actuar conforme establezcan y decida, la Asamblea General de Socios, Los Estatutos y La Administración de COOPERATIVA DE AHORRO, CRÉDITO Y SERVICIOS MÚLTIPLES LA DINÁMICA (COOPDINAMICA). 7) No estoy condenado por ningún delito por la justicia dominicana. 8) Miembros de mi familia, han ostentado la siguiente calidad en los últimos 10 años:
+										</p>
+									</div>
+									
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+									</div>
+								</div>
+								<div class="row" style="padding-bottom: 50px">
+									<div class="col-md-12">
+										<div class="form-group">
+											<div class="pure-checkbox">
+												<input type="checkbox" id="cbx" class="inp-cbx" name="terms" value="yes" required />
+												<label class="cbx" for="cbx">
+													<span>
+														<svg width="12px" height="10px" viewbox="0 0 12 10">
+															<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+														</svg>
+													</span>
+													<span>Acepto los <a data-target="#termsInfoModal" data-toggle="modal" href="" class="animated-link"> TERMINOS Y CONDICIONNES</a>.</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" style="padding-bottom: 50px">
+									<div class="col-lg-9">
+										<button type="submit" name="submit" class="btn-form-func">
+											<span class="btn-form-func-content">SUBMIT</span>
+											<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+										</button>
+									</div>
+									<div class="col-lg-3">
+										<button type="reset" name="reset" class="btn-form-func btn-form-func-remove btn-form-func-alt-color">
+											<span class="btn-form-func-content">RESET</span>
+											<span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+										</button>
+									</div>
+								</div>
+							</form>
+							<!-- Form End -->
+						</div>
+						<!-- Form Container End -->
+					</div>
+				</div>
+				<!-- Personal Data End -->
+
+			</div>
+			<!-- Container End -->
+
+		</section>
+		<!-- Contact Form End -->
+
+		<!-- Footer Start -->
+		<footer>
+			<div class="container">
+				<div class="row" style="padding-bottom: 30px">
+					<div class="col-lg-6 text-center text-lg-left">
+						<p class="mb-0">&copy; 2019-2020 COOPDINAMICA</p>
+					</div>
+					<div class="col-lg-6 text-center text-lg-right">
+						<p class="mb-0">Made with <i class="fa fa-heart pulse"></i> by <a href="#" target="_blank">TZCODE SRL</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+	</div>
+
+	<!-- Overlay -->
+	<div class="overlay"></div>
+
+	<!-- Modal Popup Terms -->
+	<div aria-hidden="true" aria-labelledby="termsInfoModalTitle" class="modal fade" id="termsInfoModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="termsInfoModalTitle">Terms and Conditions</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">
+							<i class="icon icon-cross"></i>
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+						egestas eget
+						quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					</p>
+					<p>
+						Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+						egestas eget
+						quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					</p>
+					<p>
+						Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+						egestas eget
+						quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn-modal" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Back To Top Button -->
+	<a href="" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- Vendor Javascript Files -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendor/easing/easing.min.js"></script>
+	<script src="vendor/parsley/parsley.min.js"></script>
+	<script src="vendor/custom-scrollbar/js/custom-scrollbar.min.js"></script>
+	<script src="vendor/filepond/filepond-plugin-file-validate-size.js"></script>
+	<script src="vendor/filepond/filepond-plugin-file-validate-type.js"></script>
+	<script src="vendor/filepond/filepond.min.js"></script>
+
+	<!-- Main Javascript File -->
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
